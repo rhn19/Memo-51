@@ -137,6 +137,10 @@ public class MainActivity extends AppCompatActivity {
             sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT, getResources().getString(R.string.share_message));
             startActivity(Intent.createChooser(sharingIntent, getResources().getString(R.string.share_using)));
         }
+        else if (id == R.id.action_howTo){
+            Intent intent = new Intent(MainActivity.this, HowToUseActivity.class);
+            startActivity(intent);
+        }
 
         return super.onOptionsItemSelected(item);
     }

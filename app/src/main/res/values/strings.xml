@@ -3,8 +3,33 @@
     <string name="action_about">About</string>
     <string name="action_report">Report a Bug</string>
     <string name="action_share">Share</string>
+    <string name="action_howToUse">How to Use?</string>
 
     <string name="share_using">Share Memo51</string>
+
+    <string name="how_to_use">
+        <b>Memo 51</b>\n
+        <u>A Smart Note-Taking App!</u>\n
+        <i>How To Use?</i>\n
+        All the functionality provided in this app can be used by adding @ at the start.\n
+        \n
+        Setting Alarms :\n
+        Dinner at Area 51\n
+        @Alarm(18.30)\n
+        Will set an alarm at 18:30 with title \"Dinner at Area 51\"\n
+        This takes the title from a line above @Alarm usage.\n
+        Time provided is in HH.MM\n
+        Braces are must.\n
+        \n
+        Finding Total Cost :\n
+        John owes-\n
+        Jim @Rs(1500)\n
+        Jerry @Rs(1200)\n
+        Jack @Rs(750)\n
+        Will add a total at the end of the memo and display a toast.\n
+        This stores costs in an Integer as probable totals will be in Integer Range.\n
+        Braces are must.\n
+    </string>
 
     <string name="share_message">
         Memo 51\n
