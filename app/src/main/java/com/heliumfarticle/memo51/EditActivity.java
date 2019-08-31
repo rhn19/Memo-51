@@ -83,7 +83,7 @@ public class EditActivity extends AppCompatActivity {
                 break;
             else {
                 total += Integer.valueOf(answer);
-                Toast.makeText(EditActivity.this, String.valueOf(total), Toast.LENGTH_SHORT).show();
+                Toast.makeText(EditActivity.this, "Total : " + total, Toast.LENGTH_SHORT).show();
             }
         }
         string = MainActivity.notes.get(noteId);
@@ -115,7 +115,7 @@ public class EditActivity extends AppCompatActivity {
                         }
                     }
                 }
-                Toast.makeText(EditActivity.this, hour + "+" + minute + "+" + message, Toast.LENGTH_SHORT).show();
+                Toast.makeText(EditActivity.this, "Alarm Set : " + hour + "." + minute, Toast.LENGTH_SHORT).show();
 
                 Intent i = new Intent(AlarmClock.ACTION_SET_ALARM);
                 i.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
