@@ -18,6 +18,7 @@ import android.view.MenuItem;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -27,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
 
     static ArrayList<String> notes = new ArrayList<>();
     static ArrayAdapter arrayAdapter;
+    TextView textView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -86,6 +88,7 @@ public class MainActivity extends AppCompatActivity {
                                     notes.add("Take A Note!");
                                 }
 
+                                textView.setText(notes.size() + " Note(s)");
                                 SharedPreferences sharedPreferences = getApplicationContext().getSharedPreferences("com.heliumfarticle.memo51", Context.MODE_PRIVATE);
                                 HashSet<String> set = new HashSet<>(MainActivity.notes);
                                 sharedPreferences.edit().putStringSet("notes", set).apply();
@@ -97,6 +100,15 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             }
         });
+
+        textView = findViewById(R.id.textView);
+        textView.setText(notes.size() + " Note(s)");
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        textView.setText(notes.size() + " Note(s)");
     }
 
     @Override

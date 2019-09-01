@@ -10,6 +10,7 @@ import android.provider.AlarmClock;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.HashSet;
@@ -17,6 +18,7 @@ import java.util.HashSet;
 public class EditActivity extends AppCompatActivity {
 
     int noteId;
+    TextView textView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,6 +49,9 @@ public class EditActivity extends AppCompatActivity {
                 MainActivity.notes.set(noteId, String.valueOf(s));
                 MainActivity.arrayAdapter.notifyDataSetChanged();
 
+                String string = MainActivity.notes.get(noteId);
+                String[] lines = string.split(System.getProperty("line.separator"));
+                textView.setText(MainActivity.notes.get(noteId).length() + " Characters(s)," + lines.length + " Line(s)");
                 SharedPreferences sharedPreferences = getApplicationContext().getSharedPreferences("com.heliumfarticle.memo51", Context.MODE_PRIVATE);
                 HashSet<String> set = new HashSet<>(MainActivity.notes);
                 sharedPreferences.edit().putStringSet("notes", set).apply();
@@ -57,6 +62,12 @@ public class EditActivity extends AppCompatActivity {
 
             }
         });
+
+        String string = MainActivity.notes.get(noteId);
+        String[] lines = string.split(System.getProperty("line.separator"));
+        textView = findViewById(R.id.textView);
+        textView.setText(MainActivity.notes.get(noteId).length() + " Characters(s)," + lines.length + " Line(s)");
+
     }
 
     @Override
