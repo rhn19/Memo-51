@@ -1,4 +1,5 @@
-Memo 51, a smart Note-taking app made for Pulzion 2019 Android Development Event.
+<b>Memo 51<b><br>
+<u>A Smart Note-Taking App</u> made for Pulzion 2019 Android Development Event.
 
 <div>
   <p float ="left">
