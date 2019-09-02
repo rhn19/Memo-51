@@ -16,7 +16,7 @@
         app:layout_constraintTop_toTopOf="parent"
         android:background="@drawable/border"
         android:divider="@color/colorPrimaryDark"
-        android:dividerHeight="5sp"
+        android:dividerHeight="10sp"
         android:padding="10dp">
     </ListView>
 
@@ -31,7 +31,7 @@
         android:text=""
         android:textColor="@color/colorPrimary"
         android:textSize="18sp"
-        android:textAlignment="textEnd"
+        android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

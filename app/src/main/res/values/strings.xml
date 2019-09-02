@@ -8,26 +8,30 @@
 
     <string name="how_to_use">
         <b>Memo 51</b>\n
-        <u>A Smart Note-Taking App!</u>\n
+        <u>A Smart Note-Taking App!</u>\n\n
         <i>How To Use?</i>\n
         All the functionality provided in this app can be used by adding @ at the start.\n
         \n
-        Setting Alarms :\n
+        <u>Setting Alarms :</u>\n
         Dinner at Area 51\n
         @Alarm(18.30)\n
-        Will set an alarm at 18:30 with title \"Dinner at Area 51\"\n
-        This takes the title from a line above @Alarm usage.\n
-        Time provided is in HH.MM\n
-        Braces are must.\n
+        <ul>
+            <li>Will set an alarm at 18:30 with title \"Dinner at Area 51\"</li>\n
+            <li>This takes the title from a line above @Alarm usage.</li>\n
+            <li>Time provided is in HH.MM</li>\n
+            <li>Braces are must.</li>\n
+        </ul>
         \n
-        Finding Total Cost :\n
+        <u>Finding Total Cost :</u>\n
         John owes-\n
         Jim @Rs(1500)\n
         Jerry @Rs(1200)\n
         Jack @Rs(750)\n
-        Will add a total at the end of the memo and display a toast.\n
-        This stores costs in an Integer as probable totals will be in Integer Range.\n
-        Braces are must.\n
+        <ul>
+            <li>Will add a total at the end of the memo and display a toast.</li>\n
+            <li>This stores costs in an Integer as probable totals will be in Integer Range.</li>\n
+            <li>Braces are must.</li>\n
+        </ul>
     </string>
 
     <string name="share_message">
@@ -46,7 +50,7 @@
         Developed by :\n
         Rohan Bhide\n
         Sophomore @ PICT, Pune\n
-        <a href="https://github.com/rhn19/">Github/rhn19</a>\n
+        <a href="https://github.com/rhn19/">Github/rhn19</a>\n\n
 
         v1.0\n
         Memo 51\n
